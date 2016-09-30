@@ -1,23 +1,29 @@
 ---
-layout: default
+layout: guidelines
 ---
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading">ESIP Software Guidelines</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <p>Welcome to <a href="http://www.esipfed.org/">ESIP's</a> draft research code/software guidelines. This draft is open for public comment throughout October 2016. For the benefit of your browser, we've split <a href="{{ site.baseurl }}/guidelines.html">Software Guidelines</a> and <a href="{{ site.baseurl }}/references.html">References and Bibliography</a>. We are particularly interested in suggestions for Jupyter notebooks (or other notebook platforms, as code or as documentation) and for interoperability (web services, semantic web systems or otherwise).</p>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
+  <p><strong>Draft:</strong> <a href="{{ site.baseurl }}/guidelines.html">Software Guidelines</a></p>
+
+  <p>Comments and suggestions are welcome; however, we do ask that you consider the following before commenting:</p>
+  <ul>
+    <li>This is not intended to be an academic paper. We are focusing on developing guidelines that are accessible to principle investigators as the stakeholder group serving as intermediaries between funding agency requirements and project participants. As such, we are intentionally providing current examples and current terminology in the guidance. Removing that terminology can obscure the concept that hinders readers from searching for and finding relevant information. It is our opinion that this does not serve any of the stakeholders well.</li>
+    <li>The guidelines are programming language-agnostic. We will not consider feedback that promotes one language (or one language community's philosophy) over any or all others. </li>
+    <li>If suggesting a new guideline, consider those that are inspectable to an external party. We are aware of the limitations of this statement and will consider suggestions that support good, but uninspectable, development practices, with explanation. </li>
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p>To comment, please use one of the following options, in order of preference:</p>
+    <ol>
+        <li>Comment directly on this page using the <a href="https://hypothes.is/">Hypothes.is</a> annotation system (you will need to make an account to view or add annotations).</li>
+        <li>Create an issue in <a href="https://github.com/esipfed/Software-Assessment-Guidelines/issues">GitHub</a>.</li>
+    </ol>
+  
+  
 
+ 
 </div>
