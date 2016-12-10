@@ -1,0 +1,34 @@
+---
+layout: guidelines
+title: "ESIP Software Guidelines Draft: Submitted Use Cases"
+---
+
+<h1>Submitted Use Cases</h1>
+<p>These use cases were collected during the Software Guidelines Part 2 session at ESIP Summer Meeting 2016, Durham, NC. One paragraph, one cse, provided "as is".</p>
+
+<p>Collaborative grant:  with computational linguistics where a set of tools are running on their system.  These tools have been created by their graduate students.  We are using these tools to annotate the text as the first step in a NLP/ML pipeline.  When we note a problem, those graduate students go look at it and "fix" it but there is no transparency in the processes they use (so faith in the fix is low).  We have no access to that system other than through that web interface.  However, the code theoretically is on github; but it isn't clear that the code on github is actually the same code in use on the university machine.  The output of this code is an XML file that will be used as input to a set of new algorithms.
+</p>
+<p>As part of a project several domain ontologies were created based on a nomenclature created by an international group for operational reasons.  That community recently updated that nomenclature.  In some cases only the definitions changed.  In others the relationships between terms have changed.  In others, the agreed to terms have changed.  Obviously the ontologies need to be updated.  Now what are the best practices for that?
+</p>
+<p>I'm a project manager and have to verify that my development team is using "best practices" for software development and documentation. We'd like a definition of what "best practices" are, in a way that I can clearly check that they are implementing agreed-upon best practices.
+</p>
+<p>My development team members do not agree on best practices, and its difficult to define which of their strategies should win out for the project - but the code must be consistent when delivered. How do we choose?
+</p>
+<p>I’m a graduate student who doesn’t actually know what the funder is interested in, I have no real formal training in best practices at all, but I’d ultimately like the work that I do to be publicly available. I want to be able to write analysis code in a way that conforms to these best practices, without a deep window into the whole evaluation process. What sort of steps should I be taking? (+2)
+</p>
+<p>I often have to read through code snippets to try to understand where an issue or bug is, or why a certain error results. I end up googling errors/practices in trying to understand what the issue could be, and then end up in a rabbit hole and on forums where I don't feel comfortable asking my question. Having a primer on best practices of what code should be/look/act would give me a language for asking and understanding other people's code (and if the code has a shortcoming or not).
+</p>
+<p>Working on multi-year grant for evaluation of machine learning "Challenge"  year one evaluation scripts are written for a particular data schema/conceptual data model.  Year three the funder wants to see the challenge focus move slightly. This requires changing the evaluation scripts. The grad student who originally wrote the evaluation has moved on and a new grad student is required to modify the script for a tweaked/slightly different data model. How do we know the results from year one are comparable to the results in year three? 
+</p>
+<p>Seems to be a relationship between complexity/amount of code and function and documentation required - the longer, larger functionality, the more depth of documentation may be required ("depth" not being the right word... capturing the difference between in-line code doc for a simple script and a user guide, tutorial, prereqs, etc. in a more complex case). Applies similarly for code review and level of formal testing.
+</p>
+<p>I'm a postdoc/research scientist writing processing/visualization scripts for a topic that is gaining popularity. Potentially, dozens of people (or maybe just a few) may want to reuse this, as the community learns how to do this new kind of data analysis. I'm on a single research grant. Myself, and the people who would want to reuse this code, have very little/no software training, we just open MATLAB/python/R and start fiddling until something works. 
+</p>
+<p>I'm a postdoc/research scientist. I just published a paper, funded by a single science grant. "I decided not to share the code because I haven't taken the time to properly document it. If someone requests it, I will put some effort into cleaning it up and should that happen might as well publish it."
+</p>
+<p>I'm a PI and my group maintains some software in fortran (say in, atmospheric modeling) that has been built upon by my research group by over 30 years. There are many individuals (over 20, including grad students) that have worked on the code and added improvements, new features. ~50% of the papers that come out of my 15-person research group are based on this code. Over the years, there have been dozens of grants from many different funders that have paid for improvements to this code. In general, the training of researchers in my group in software is 1+ programming courses in college.
+</p>
+<p>Funder is seeking to integrate "latest and greatest" research code and so has to identify 20 to 30 PIs along with one coordinating PI who will do technical integration of the research code/software.  How do we evaluate the proposal of the coordinating PI to ensure that it will meet the needs of the individual PIs? </p>
+<p>I work in a Federal agency and write research code to support my scientific publications. I am evaluated on the scientific publications that I produce. My agency requires that code be published to the public in conjunction of the scientific publications.
+</p>
+<p>I am a distributed computing research and my code (that needs to be evaluated)  can only be run with complex networked infrastructure. How do I evaluate something I require a lot of resources to run?</p>
