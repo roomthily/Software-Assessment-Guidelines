@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
+\usepackage[margin=1in]{geometry}
+
+\usepackage{fancyhdr} 
+\fancyhf{}
+\cfoot{\thepage}
+\pagestyle{fancy} 
+
+\makeatletter
+\def\@seccntformat#1{%
+  \expandafter\ifx\csname c@#1\endcsname\c@section\else
+  \csname the#1\endcsname\quad
+  \fi}
+\makeatother
+
+% i do not enjoy the default indent
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{0.5cm plus4mm minus3mm}
+
+\title{ESIP Software Assessment Guidelines Summary}
+\author{Soren Scott}
+\date {May 5, 2017}
+
+\begin{document}
+\maketitle
+
+The \href{https://esipfed.github.io/Software-Assessment-Guidelines/guidelines.html} {ESIP Software Assessment Guidelines} provides a broad discussion of research code and software practices. This includes background context on our different research goals, environments and group structures, sustainability needs and potential progression and maturity impacts as well as a set of principles and guidelines to aid in meeting our research goals and our community expectations.  
+ 
+The guidelines are presented under eight principles:
+\begin{enumerate}
+\item Sustainable
+\item Interoparable
+\item Usable
+\item Documented
+\item Secure
+\item Sharable
+\item Goverened
+\item Code as Research Products
+\end{enumerate}
+
+The guidelines within those are meant to serve as a current baseline for a broad swath of research development practices. It is not a comprehensive, highly specific set of guidelines; rather it is meant to highlight underlying concepts for effective code and project-level practices that can be built on for specific audience and functional needs. 
+ 
+Ideally, we, as a community, agree on the principles, agree on the guideline concepts and provide guidance that allows (and encourages) researchers and research groups to implement the recommended practices according to their language community or the larger development community. 
+
+For the ESIP community, the document offers multiple benefits:
+
+\begin{itemize}
+\item For those learning to code or with new learners in their research groups or organizations, the guidelines cover recommended code practices for getting started as well as providing some context for more advanced software projects, to improve understanding and communication between collaborators or as you move into new research efforts requiring more involved technologies. 
+\begin{itemize}
+\item Begin with \textbf{Sustainable Code} and \textbf{Code as Research Products}.
+\end{itemize}
+\item For research group members, the guidelines can support efforts to introduce development practices, from the developer side or the management side. 
+\begin{itemize}
+\item Each group faces different needs based on current workflows and projects. The guidelines can be used to identify potential gaps and to provide rationale for implementing workflow improvements. We don’t encourage blind adoption; successful integration relies on understanding your work culture and workflows. 
+\end{itemize}
+\item For principal investigators, managers or project leads, the guidelines includes concepts out of the larger open source community to address sustainability concerns.
+\begin{itemize}
+\item Consider \textbf{Governed}, \textbf{Sharable} and \textbf{Usable} as areas to evaluate efforts related to your project’s sustainability expectations.
+\end{itemize}
+\item For implementers and developers (at any level), we provide some information on efforts that are increasingly important within the larger research community for reproducibility/replicability, sustainability and community engagement (whether for improved adoption rates or for improving the overall learnability and understandability of research code). Consider the guidelines in light of this larger community.
+\item For members active or interested in discussions on quality metrics or assessment efforts, the document provides scenarios and a progression/maturity discussion to support context-driven criteria definitions and aid in discussions with researchers. This includes discussions on progression models and sustainability and how the guidelines may or may not be effective given the larger open source sustainability conversations and the efforts of our funding agencies.  
+\end{itemize}
+
+\section{Future Work}
+This document is not intended to be the final word on research development practices. We expect the guidelines to evolve as technologies change, tools change, language communities change, and as research community ideals change. As such, it is presented as an open document to be extended, updated and modified to meet the needs of the ESIP community and those in the geosciences.
+
+\end{document}
